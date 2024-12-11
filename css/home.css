@@ -193,7 +193,7 @@
     line-height: 46px; /* 127.778% */
 }
 
-.institucional-video iframe{
+.institucional-video iframe,video{
     width: 80vw;
     height: 99vh;
     flex-shrink: 0;
