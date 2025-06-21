@@ -107,3 +107,57 @@
     font-weight: 700;
     line-height: 28px; /* 127.273% */
 }
+
+
+/* Estilo para a seção contendo o botão */
+.estatuto-btn {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Linha cinza que vai até 80% da largura da página */
+.estatuto-btn hr {
+    width: 90%;
+    margin: 20px auto;  /* Centraliza a linha e dá 20px de distância em cima e embaixo */
+    border: 1px solid gray;  /* Cor cinza para a linha */
+    border-style: solid;  /* Adiciona um estilo tracejado */
+}
+
+.estatuto-btn a{
+    text-decoration: none;
+    
+}
+
+/* Estilo do botão */
+.estatuto-btn button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F47701; /* Cor de fundo laranja */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 12px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    width: 320px;
+    height: 80px;  /* Altura de 40px */
+    cursor: pointer;  /* Indica que o botão é clicável */
+    transition: background-color 0.3s ease; /* Animação de transição de cor */
+
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.estatuto-btn button:hover {
+    background-color: #e68a00; /* Cor de fundo mais escura quando passar o mouse */
+}
+
