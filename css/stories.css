@@ -16,7 +16,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 66px; /* 117.857% */
-    margin-bottom: 200px;
 
 }
 
@@ -25,9 +24,12 @@
     flex-direction: column;
     background-color: #F47701;
     padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     gap: 50px;
     justify-content: center;
     align-items: center;
+    margin-bottom: -80px;
 }
 .stories-card{
     display: flex;
