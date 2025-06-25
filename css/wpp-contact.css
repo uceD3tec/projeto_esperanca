@@ -1,72 +1,80 @@
-
-
-.wpp-contact{
-    background-color: #F47701;
+.wpp-contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 80px;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background-color: #F47701;
 }
 
-.wpp-contact-main-div{
-    padding-left: 50px;
-    padding-right: 50px;
+.wpp-contact-main-div {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
     display: flex;
-    width: 85%;
-    height: 50%;
+    width: 75vw;
+    height: 10vw;
     border-radius: 10px;
     background-color: #161618;
     justify-content: space-between;
     align-items: center;
 }
 
-.wpp-contact-main-div-text{
+.wpp-contact-main-div-text {
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
-.wpp-contact-main-div-text h3{
+.wpp-contact-main-div-text h3 {
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
     align-self: flex-start;
+    margin: 0;
 }
 
-.wpp-contact-main-div-text p{
-    margin-top: -20px;
+.wpp-contact-main-div-text p {
     text-align: center;
     font-family: "Open Sans";
-    font-size: 20px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;  
+    margin: 0;
 }
 
-.wpp-contact-main-div a{
+.wpp-contact-main-div a {
     text-decoration: none;
 }
 
-.wpp-contact-main-div-button{
+.wpp-contact-main-div-button {
+    text-decoration: none;
     display: flex;
-    width: fit-content;
-    height: 50%;
-    padding: 18px 28px;
+    padding: 1vw 3vw;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    border-radius: 15px;
+    margin: 0;
+    border-radius: 2vw;
     background: #FFF;
+    color: black;
+    font-family: Inter;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.wpp-contact-main-div-button:hover {
+    padding: 1.1vw 3.1vw;
+}
+
+.wpp-contact-main-div-button p {
+    text-decoration: none;
+    margin: 0;
     color: #161618;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1.8vw;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }

@@ -1,229 +1,240 @@
-
-.why-donate{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-}
-
-.why-donate-central-div{
-    width: 80vw;
-    height: 76vh;
-    border-radius: 20px;
-    background: #F47701;
-    display: flex;
-}
-
-.why-donate-left-side{
-    width: 50%;
-    border-radius: inherit;
+.donate-methods {
+    margin-top: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8vw;
+    /* border: red 2px solid; */
+
+    .donate-methods-card-group {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+
+        .donate-card {
+            border-radius: 24px;
+            border: 1px solid #161618;
+            height: 35vw;
+            width: 21vw;
+            display: flex;
+            flex-direction: column;
+            padding: 4vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donate-card img {
+            margin: 2.5vw 0 1.5vw 0;
+            width: 11vw;
+            height: 11vw;
+            border-radius: 100%;
+            border: 2px solid #161618;
+            background: url(<path-to-image>) lightgray 50% / cover no-repeat, #F9F9FF;
+        }
+
+        .donate-card h3 {
+            margin: 0 0 2.5vw 0;
+            color: #F47701;
+            text-align: center;
+            font-feature-settings: 'liga' off, 'clig' off;
+
+            /* Special headings/Display 3 */
+            font-family: "DM Sans";
+            font-size: 3.5vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3vw;
+            /* 113.636% */
+        }
+
+        .donate-card p {
+            margin: 0;
+            /* margin-top: -10px; */
+            color: rgba(22, 22, 24, 0.50);
+            text-align: center;
+            font-feature-settings: 'liga' off, 'clig' off;
+
+            /* Body/Default */
+            font-family: "DM Sans";
+            font-size: 1.5vw;
+            font-style: normal;
+            font-weight: 400;
+            /* line-height: 3vw; */
+            /* 166.667% */
+        }
+
+        .donate-card a {
+            display: flex;
+            margin-top: 1.8vw;
+            width: 65%;
+            padding: 2.6vw 4.5vw;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 47px;
+            background: #161618;
+            color: #FFF;
+            text-align: center;
+            text-decoration: none;
+            font-feature-settings: 'liga' off, 'clig' off;
+
+            /* Text single/300/Bold */
+            font-family: "DM Sans";
+            font-size: 1.8vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            /* 100% */
+        }
+    }
 }
 
-.why-donate-left-side-text{
-    text-wrap: wrap; /* O motivo para separar em mais uma div*/
-    height: 60%;
-    width: 70%;
-}
-
-.why-donate-left-side-text h3{
-    color: var(--Neutral-Colors-White, #FFF);
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Headings/H2 */
-    font-family: "DM Sans";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 46px; /* 127.778% */
-}
-
-.why-donate-left-side-text p{
-    margin-top: -20px;
-    color: #FFF;
-    text-align: justify;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Body/Default */
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-}
-
-.why-donate-right-side{
-    width: 50%;
-    height: inherit;
-    background-color: #0AA550;
-    border-radius: inherit;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    background: url("../images/donate1.png");
-}
-
-
-.donate-methods{
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 120px;
-}
-
-#methods{
+.donate-methods h2 {
     color: rgba(22, 22, 24, 0.50);
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
-    
+
     /* Text Single Uppercase/200/Bold */
     font-family: "DM Sans";
-    font-size: 18px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; /* 111.111% */
-    letter-spacing: 1.8px;
     text-transform: uppercase;
 }
 
-.donate-methods h3{
-    margin-top: -15px;
+.donate-methods h3 {
+    margin: 0 0 6vw 0;
     color: #161618;
+    /* color: #0AA550; */
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
-    
+
     /* Headings/H1 */
     font-family: "DM Sans";
-    font-size: 56px;
+    font-size: 4.5vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 66px; /* 117.857% */
+    line-height: 66px;
 }
 
-.donate-methods-card-group{
+.why-donate {
     display: flex;
-    flex-direction: row;
-    gap: 28px;
-}
-
-
-.donate-card{
-    border-radius: 24px;
-    border: 1px solid #161618;
-    height: 64vh;
-    width: 21vw;
-    display: flex;
-    flex-direction: column;
-    padding: 35px; 
-    align-items: center;
-    justify-content: center;
-}
-
-.donate-card h3{
-    color: #F47701;
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Special headings/Display 3 */
-    font-family: "DM Sans";
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px; /* 113.636% */
-}
-
-.donate-card p{
-    margin-top: -10px;
-    color: rgba(22, 22, 24, 0.50);
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Body/Default */
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-}
-
-.donate-card a{
-    text-decoration: none;
-    margin-top: 20px;
-    display: flex;
-    width: 65%;
-    padding: 28px 56px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    border-radius: 47px;
-    background: #161618;
-    color: #FFF;
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Text single/300/Bold */
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px; /* 100% */
+    padding-top: 4vw;
+
+    .why-donate-central-div {
+        display: flex;
+        height: 45vw;
+        width: 80vw;
+        border-radius: 20px;
+        background: #F47701;
+        display: flex;
+    }
+
+    .why-donate-left-side {
+        width: 50%;
+        border-radius: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-donate-left-side-text {
+        text-wrap: wrap;
+        /* O motivo para separar em mais uma div*/
+        height: 60%;
+        width: 70%;
+    }
+
+    .why-donate-left-side-text h3 {
+        color: var(--Neutral-Colors-White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Headings/H2 */
+        font-family: "DM Sans";
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+        /* 127.778% */
+    }
+
+    .why-donate-left-side-text p {
+        margin-top: -20px;
+        color: #FFF;
+        text-align: justify;
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Body/Default */
+        font-family: "DM Sans";
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2vw;
+        /* 166.667% */
+    }
+
+    .why-donate-right-side {
+        display: flex;
+        /* height: 40vw; */
+        width: 45vw;
+        background-color: #0AA550;
+        border-radius: inherit;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        background: url("../images/donate1.png");
+        background-size: cover;
+    }
 }
 
-.donate-card img{
-    margin-bottom: 34px;
-    width: 148px;
-    height: 148px;
-    border-radius: 148px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat, #F9F9FF;
-}
-
-
-.donate-info{
-    margin-top: 140px;
+.donate-info {
+    margin-top: 9vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 140px;
-    margin-left: -20px;
-    margin-bottom: 120px;
-}
+    gap: 9vw;
+    margin-left: -2vw;
+    margin-bottom: 8vw;
+    /* border: red 2px solid; */
 
-.donate-info-text{
-    display: flex;
-    flex-direction: column;
-}
+    .donate-info-text {
+        display: flex;
+        flex-direction: column;
+    }
 
-.donate-info-text h3{
-    color: #161618;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Headings/H2 */
-    font-family: "DM Sans";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 46px; /* 127.778% */
-}
+    .donate-info-text h3 {
+        color: #161618;
+        font-feature-settings: 'liga' off, 'clig' off;
 
-.donate-info-text p{
-    color: rgba(22, 22, 24, 0.50);
-    text-align: justify;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
-    /* Body/Default */
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-}
+        /* Headings/H2 */
+        font-family: "DM Sans";
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 700;
+        /* line-height: 46px; */
+        /* 127.778% */
+    }
 
-.donate-info-text img{
-    height: 64px;
-    width: 64px;
-    border-radius: 20px;
+    .donate-info-text p {
+        color: rgba(22, 22, 24, 0.50);
+        text-align: justify;
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Body/Default */
+        font-family: "DM Sans";
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2vw;
+        /* 166.667% */
+    }
+
+    .donate-info-text img {
+        height: 64px;
+        width: 64px;
+        border-radius: 20px;
+    }
 }

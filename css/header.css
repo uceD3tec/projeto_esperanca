@@ -1,80 +1,104 @@
-
-.header{
+.header {
     display: flex;
-    width: 90%;
-    padding: 16px 72px;
-    justify-content: space-between;
-    align-items: center; 
-    background: #FFF;
-    box-shadow: 0px 14px 42px 0px rgba(20, 20, 43, 0.14);
-}
-
-
-.header-logo{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.header-logo h3{
-    color: #0AA550;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-}
-
-.header-logo p{
-    margin-top: -20px;
-    color: #161618;
-    font-family: Arial;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.header-button-group{
-    display: flex;
-    padding: 0px 12px;
+    height: 10vw;
+    width: 100vw;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    background: #FFF;
+    box-shadow: 0px 14px 60px 0px rgba(20, 20, 43, 0.30);
+    gap: 10vw;
+    /* border: red 2px solid; */
 }
 
-.header-button-group a{
+.header-logo {
+    display: flex;
+    height: 15vh;
+    width: 22vw;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    background-size: cover;
+}
+
+.header-logo img {
+    display: flex;
+    height: 6.5vw;
+    width: 7vw;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.header-logo-text {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.header-logo-text h3 {
+    display: flex;
+    height: fit-content;
+    width: 16vw;
+    font-family: Arial;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo-text p {
+    display: flex;
+    width: fit-content;
+    color: #161618;
+    font-family: Arial;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.header-button-group {
+    display: flex;
+    padding: 0% 5%;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header-button-group a {
     text-decoration: none;
 }
 
-.header-button{
+.header-button {
     color: #161618;
     text-align: center;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-
-
-.header-button:hover{
+.header-button:hover {
     color: #F47701;
     cursor: pointer;
 }
 
-.donate-button{
-    color: #f6f6f6;
+.donate-button {
     display: flex;
-    padding: 8px 12px;
+    height: 5vw;
+    width: 10vw;
+    color: #f6f6f6;
+    /* padding: 8px 12px; */
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     border-radius: 20px;
     background: linear-gradient(100deg, rgba(253, 189, 14, 0.20) 1.32%, rgba(244, 119, 1, 0.20) 50.66%, rgba(231, 69, 0, 0.20) 100%), #F47701;
 }
 
-.donate-button:hover{
+.donate-button:hover {
     color: #f6f6f6;
     background: linear-gradient(100deg, rgba(253, 189, 14, 0.20) 1.32%, rgba(244, 119, 1, 0.20) 50.66%, rgba(231, 69, 0, 0.20) 100%), #d36702;
 }

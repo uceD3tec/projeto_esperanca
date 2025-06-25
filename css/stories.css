@@ -1,81 +1,85 @@
-
-.stories-intro{
+.stories-intro {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.stories-intro-title{
+.stories-intro-title {
     color: #F47701;
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
 
     /* Headings/H1 */
     font-family: "DM Sans";
-    font-size: 56px;
+    font-size: 4.5vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 66px; /* 117.857% */
+    line-height: 6vw;
+    /* 117.857% */
 
 }
 
-.stories-card-group{
+.stories-card-group {
     display: flex;
     flex-direction: column;
     background-color: #F47701;
-    padding: 20px;
-    padding-top: 50px;
-    padding-bottom: 80px;
-    gap: 50px;
+    padding-top: 4.5vw;
+    padding-bottom: 6vw;
+    gap: 4.5vw;
     justify-content: center;
     align-items: center;
-    margin-bottom: -80px;
 }
-.stories-card{
+
+.stories-card {
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 24px;
-    max-width: 90%;
-    max-height: 66vh;
-    gap: 40px;
+    height: 35vw;
+    width: 85vw;
+    gap: 3.5vw;
 }
 
-.stories-card-resume{
+.stories-card-resume {
     display: flex;
+    width: 50%;
     flex-direction: column;
-    max-width: 50%;
 }
-.storie-title{
+
+.storie-title {
     color: #F47701;
-font-feature-settings: 'liga' off, 'clig' off;
+    /* margin: 0; */
+    font-feature-settings: 'liga' off, 'clig' off;
 
-/* Headings/H2 */
-font-family: "DM Sans";
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 46px; /* 127.778% */
+    /* Headings/H2 */
+    font-family: "DM Sans";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5vw;
+    /* 127.778% */
 
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 
 }
 
-.storie-resume{
+.storie-resume {
+    margin: 0;
     color: #131313;
     text-align: justify;
     font-feature-settings: 'liga' off, 'clig' off;
 
     /* Body/Default */
     font-family: "DM Sans";
-    font-size: 18px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 166.667% */
+    line-height: 1.5vw;
+    /* 166.667% */
 
 }
 
-.stories-card-img{
+.stories-card-img {
     object-fit: fill;
     max-width: 40%;
     border-top-left-radius: inherit;

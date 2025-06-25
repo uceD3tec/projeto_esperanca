@@ -1,65 +1,75 @@
-
-
-.img-inicio-gestao{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../images/imagem_inicio.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: 100vw;
-    height: 90vh; 
-
+.body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.img-inicio-gestao h3{
+.img-inicio-gestao {
+    display: flex;
+    height: 50vw;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../images/imagem_inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img-inicio-gestao h3 {
     color: #FFF;
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Poppins;
-    font-size: 46px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 66px; /* 117.857% */
+    line-height: 6vw;
+    /* 117.857% */
 }
 
-
-
-.gestao-page{
+.gestao-page {
     display: flex;
     flex-direction: column;
 }
 
-.coordenacao, .gestao, .conselho{
+.coordenacao,
+.gestao,
+.conselho {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 80px;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    margin-top: 6vw;
 }
 
-.coordenacao h3, .gestao h3, .conselho h3{
-    margin-bottom: -20px;
+.coordenacao h3,
+.gestao h3,
+.conselho h3:not(.name-and-function h3) {
+    margin: 0;
     color: #161618;
     font-feature-settings: 'liga' off, 'clig' off;
-    
+
     /* Headings/H2 */
     font-family: "DM Sans";
-    font-size: 36px;
+    font-size: 2.5vw;
     font-style: normal;
-    font-weight: 700;
-    line-height: 46px; /* 127.778% */
+    font-weight: 500;
+    line-height: 3.5vw;
+    /* 127.778% */
 }
 
-.conselho-card-row{
+.conselho-card-row {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 2.8vw;
+    margin-top: 3.2vw;
 }
 
-.gestao-card{
+.gestao-card {
     width: 28vw;
     height: 20vh;
     border-radius: 24px;
@@ -68,69 +78,77 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 20px;
-    gap: 10px;
+    padding-left: 1.8vw;
+    gap: 1vw;
 }
 
-.gestao-card img{
+.gestao-card img {
     background-color: azure;
     border-radius: 80px;
-    width: 80px;
-    height: 80px;
+    width: 6vw;
+    height: 6vw;
     background-image: url("../images/insta1.png");
 }
 
-.name-and-function{
+.name-and-function {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1vw;
 }
 
-.name-and-function p{
+.name-and-function h3 {
+    margin: 0;
     color: #FFF;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1.8vw;
     font-style: normal;
-    font-weight: 700;
-    line-height: 18px; /* 112.5% */
+    font-weight: 500;
+    line-height: 2.5vw;
+    /* 127.273% */
+}
+
+.name-and-function p {
+    margin: 0;
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2vw;
+    /* 112.5% */
     letter-spacing: 1.6px;
     text-transform: uppercase;
 }
 
-.name-and-function h3{
-    color: #FFF;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px; /* 127.273% */
-}
 
 
 /* Estilo para a seção contendo o botão */
 .estatuto-btn {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
 }
 
 /* Linha cinza que vai até 80% da largura da página */
 .estatuto-btn hr {
     width: 90%;
-    margin: 20px auto;  /* Centraliza a linha e dá 20px de distância em cima e embaixo */
-    border: 1px solid gray;  /* Cor cinza para a linha */
-    border-style: solid;  /* Adiciona um estilo tracejado */
+    margin: 1.8vw auto;
+    /* Centraliza a linha e dá 20px de distância em cima e embaixo */
+    border: 1px solid gray;
+    /* Cor cinza para a linha */
+    border-style: solid;
+    /* Adiciona um estilo tracejado */
 }
 
-.estatuto-btn a{
+.estatuto-btn a {
     text-decoration: none;
-    
+
 }
 
 /* Estilo do botão */
@@ -139,25 +157,34 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #F47701; /* Cor de fundo laranja */
-    color: white; /* Cor do texto */
-    border: none; /* Remove borda */
-    border-radius: 12px; /* Bordas arredondadas */
-    font-size: 18px; /* Tamanho da fonte */
-    padding: 10px 20px; /* Espaçamento interno */
-    width: 320px;
-    height: 80px;  /* Altura de 40px */
-    cursor: pointer;  /* Indica que o botão é clicável */
-    transition: background-color 0.3s ease; /* Animação de transição de cor */
+    background-color: #F47701;
+    /* Cor de fundo laranja */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove borda */
+    border-radius: 12px;
+    /* Bordas arredondadas */
+    font-size: 1.5vw;
+    /* Tamanho da fonte */
+    padding: 1vw 1.8vw;
+    /* Espaçamento interno */
+    width: 30vw;
+    height: 6vw;
+    /* Altura de 40px */
+    cursor: pointer;
+    /* Indica que o botão é clicável */
+    transition: background-color 0.3s ease;
+    /* Animação de transição de cor */
 
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 700;
 }
 
 .estatuto-btn button:hover {
-    background-color: #e68a00; /* Cor de fundo mais escura quando passar o mouse */
+    background-color: #e68a00;
+    /* Cor de fundo mais escura quando passar o mouse */
 }
-
