@@ -1,104 +1,80 @@
-.header {
+.header{    
     display: flex;
-    height: 10vw;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    padding: 16px 72px;
+    justify-content: space-between;
+    align-items: center; 
     background: #FFF;
-    box-shadow: 0px 14px 60px 0px rgba(20, 20, 43, 0.30);
-    gap: 10vw;
-    /* border: red 2px solid; */
+    box-shadow: 0px 14px 42px 0px rgba(20, 20, 43, 0.14);
 }
 
-.header-logo {
+
+.header-logo{
     display: flex;
-    height: 15vh;
-    width: 22vw;
     align-items: center;
-    justify-content: center;
-    padding-left: 5%;
-    background-size: cover;
+    gap: 16px;
 }
 
-.header-logo img {
-    display: flex;
-    height: 6.5vw;
-    width: 7vw;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-}
-
-.header-logo-text {
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-}
-
-.header-logo-text h3 {
-    display: flex;
-    height: fit-content;
-    width: 16vw;
+.header-logo h3{
+    color: #0AA550;
     font-family: Arial;
-    font-size: 1.8vw;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
+    line-height: normal; 
 }
 
-.header-logo-text p {
-    display: flex;
-    width: fit-content;
+.header-logo p{
+    margin-top: -20px;
     color: #161618;
     font-family: Arial;
-    font-size: 1.3vw;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    padding: 0;
-    margin: 0;
+    line-height: normal;
 }
 
-.header-button-group {
+.header-button-group{
     display: flex;
-    padding: 0% 5%;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 32px;
 }
 
-.header-button-group a {
+.header-button-group a{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-button {
+.header-button{
     color: #161618;
     text-align: center;
     font-family: Inter;
-    font-size: 1.5vw;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.header-button:hover {
+.header-button:hover{
     color: #F47701;
     cursor: pointer;
 }
 
-.donate-button {
-    display: flex;
-    height: 5vw;
-    width: 10vw;
+.donate-button{
     color: #f6f6f6;
-    /* padding: 8px 12px; */
+    display: flex;
+    padding: 8px 12px;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
     border-radius: 20px;
     background: linear-gradient(100deg, rgba(253, 189, 14, 0.20) 1.32%, rgba(244, 119, 1, 0.20) 50.66%, rgba(231, 69, 0, 0.20) 100%), #F47701;
+    max-width: 50%; 
 }
 
-.donate-button:hover {
+.donate-button:hover{
     color: #f6f6f6;
     background: linear-gradient(100deg, rgba(253, 189, 14, 0.20) 1.32%, rgba(244, 119, 1, 0.20) 50.66%, rgba(231, 69, 0, 0.20) 100%), #d36702;
 }
