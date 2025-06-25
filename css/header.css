@@ -78,3 +78,63 @@
     color: #f6f6f6;
     background: linear-gradient(100deg, rgba(253, 189, 14, 0.20) 1.32%, rgba(244, 119, 1, 0.20) 50.66%, rgba(231, 69, 0, 0.20) 100%), #d36702;
 }
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px ;
+        width: 100%;
+        align-items: flex-start !important;
+    }
+
+    .header-logo {
+        padding: 0;
+        gap: 10px;
+        width: 100% !important;
+        justify-content: space-around !important;
+        padding-left: 0 !important;
+    }
+
+    .header-logo h3{
+        width: fit-content !important;
+        font-size: 16px !important;
+    }
+
+    .header-logo p {
+        font-size: 12px !important;
+    }
+
+    .header-logo img{
+        width: 60px !important;
+        height: 50px !important;
+    }
+
+    .header-button-group {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px !important;
+        width: 100%;
+        padding: 0;
+    }
+
+    .header-button-group a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #icm {
+        font-size: 20px !important;
+    }
+
+    .icone_menu{
+        text-decoration: none !important;
+    }
+
+    .header-button, .donate-button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px !important;
+
+    }
+}
