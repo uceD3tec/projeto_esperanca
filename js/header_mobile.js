@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.style.setProperty('display', 'none', 'important');
         icone_drop.style.display = 'block';
         // console.log("internamente o valor é " + icone_drop.textContent)
+    }else{
+        icone_drop.style.display = 'none';
     }
 
   
