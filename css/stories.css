@@ -85,3 +85,55 @@
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .stories-card-group {
+        gap: 40px;
+    }
+    
+    .stories-card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 24px;
+        height: fit-content;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        box-shadow: 0px 14px 42px 0px rgba(0, 0, 0, 0.30);
+    }
+
+    .storie-title {
+        font-size: 20px !important;
+
+    }
+    .stories-card-resume { /*div*/
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .storie-resume { /*p*/
+        /* Body/Default */
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        /* 166.667% */
+
+    }
+
+    .stories-card-img {
+        max-width: 100%;
+        width: 100% !important;
+        border-radius: 0;
+        height: 30vh;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+
+}

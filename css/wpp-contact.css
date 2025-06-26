@@ -93,7 +93,7 @@
         padding: 20px;
         text-align: center;
         background-color: #161618 !important;
-        height: 20vh !important;
+        height: fit-content !important;
     }
 
     .wpp-contact-main-div-text {
