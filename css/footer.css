@@ -167,7 +167,7 @@
     }
 
     .footer-line {
-        margin-top: 120px;
+        margin-top: 8vw;
         border: #D4D2E3 1px solid;
         width: 84vw;
         position: relative;
@@ -205,8 +205,7 @@
     }
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .footer {
         margin-top: 40px;
         justify-content: center;
@@ -219,7 +218,9 @@
         padding: 0 20px;
     }
 
-    .footer-donate, .footer-links, .footer-news {
+    .footer-donate,
+    .footer-links,
+    .footer-news {
         width: 100%;
         align-items: center !important;
         justify-content: center !important;
@@ -234,11 +235,11 @@
         font-size: 18px !important;
     }
 
-    .footer-links{
+    .footer-links {
         gap: 20px !important;
     }
 
-    .footer-links h3{
+    .footer-links h3 {
         font-size: 26px;
         margin-bottom: 0;
     }
@@ -249,7 +250,7 @@
         justify-content: center;
     }
 
-    .footer-news h3{
+    .footer-news h3 {
         font-size: 22px;
 
     }
@@ -259,20 +260,21 @@
         height: 100px !important;
     }
 
-    .footer-donate img{
+    .footer-donate img {
         height: 64px !important;
         width: 64px !important;
     }
 
-    .footer-donate h3{
+    .footer-donate h3 {
         font-size: 18px !important;
     }
-    .footer-donate p{
+
+    .footer-donate p {
         font-size: 12px !important;
         line-height: 20px !important;
     }
 
-    .footer-button{
+    .footer-button {
         font-size: 18px !important;
     }
 

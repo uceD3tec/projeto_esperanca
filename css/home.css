@@ -194,7 +194,6 @@
     background-size: cover;
 }
 
-
 .institucional-video {
     padding-top: 6vw;
     display: flex;
@@ -225,9 +224,6 @@ video {
     border-radius: 25px;
     background-color: #161618;
 }
-
-
-
 
 .yearly-results {
     display: flex;
