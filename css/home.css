@@ -4,6 +4,12 @@
     overflow-x: none;
 }
 
+.icone_menu {
+    display: none;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
 .action-banner {
     padding-top: 50px;
     display: flex;
@@ -188,7 +194,6 @@
     background-size: cover;
 }
 
-
 .institucional-video {
     padding-top: 6vw;
     display: flex;
@@ -219,9 +224,6 @@ video {
     border-radius: 25px;
     background-color: #161618;
 }
-
-
-
 
 .yearly-results {
     display: flex;
@@ -433,4 +435,198 @@ video {
 
 .partners-card-slider-left:hover svg path {
     stroke: white;
+}
+
+/*
+    VERSÃO DE CELULAR
+*/
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .action-banner-central-div {
+        width: 90vw;
+        height: auto;
+        min-height: 300px;
+        padding: 20px;
+        border-radius: 15px;
+
+    }
+
+    .action-banner-central-div h3 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .action-banner-central-div p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .action-banner-button-group {
+        flex-direction: column;
+        gap: 15px;
+        width: 100% !important;
+    }
+
+    .action-banner-button,
+    .action-banner-button2 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about-us-central-div {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        border-radius: 15px;
+
+    }
+
+    .about-us-left-side,
+    .about-us-right-side {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .about-us-left-side {
+        order: 2;
+        padding: 40px;
+        width: 90%;
+        margin-left: -20px;
+    }
+
+    .about-us-right-side {
+        order: 1;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about-us-left-side-text {
+        width: 90%;
+        height: auto;
+    }
+
+    .about-us-left-side-text h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about-us-left-side-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .institucional-video h3 {
+        font-size: 28px;
+        line-height: 36px;
+
+    }
+
+    .institucional-video iframe,
+    .institucional-video video {
+        width: 90vw;
+        height: 50vw;
+        border-radius: 15px;
+
+    }
+
+    .yearly-results {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        background-color: white;
+    }
+
+    .yearly-results h3 {
+        font-size: 28px;
+        line-height: 36px;
+        color: #F47701;
+        font-size: 26px;
+    }
+
+    .yearly-results-card-group {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .yearly-results-card {
+        width: 90%;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .yearly-results-card h3 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .yearly-results-card p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: -30px;
+    }
+
+    .instagram-news-slider {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instagram-news-card-group {
+        display: none;
+
+    }
+
+    .instagram-news-slider h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 36px;
+    }
+
+    .instagram-news-slider p {
+        display: none;
+    }
+
+    .instagram-news-slider-group {
+        display: none;
+    }
+
+    .partners {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .partners-card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .partners-card-slider-left,
+    .partners-card-slider-right {
+        display: none;
+    }
 }

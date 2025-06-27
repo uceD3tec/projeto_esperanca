@@ -167,7 +167,7 @@
     }
 
     .footer-line {
-        margin-top: 120px;
+        margin-top: 8vw;
         border: #D4D2E3 1px solid;
         width: 84vw;
         position: relative;
@@ -202,5 +202,99 @@
         font-size: 1.5vw;
         font-style: normal;
         font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .footer-donate,
+    .footer-links,
+    .footer-news {
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .footer-donate p {
+        text-align: center;
+    }
+
+    .footer-links a {
+        font-size: 18px !important;
+    }
+
+    .footer-links {
+        gap: 20px !important;
+    }
+
+    .footer-links h3 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+
+    .footer-news-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-news h3 {
+        font-size: 22px;
+
+    }
+
+    .footer-news-card {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .footer-donate img {
+        height: 64px !important;
+        width: 64px !important;
+    }
+
+    .footer-donate h3 {
+        font-size: 18px !important;
+    }
+
+    .footer-donate p {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+
+    .footer-button {
+        font-size: 18px !important;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        margin-top: 50px !important;
+        padding: 10px 20px !important;
+        gap: 10px !important;
+    }
+
+    .footer-bottom p {
+        font-size: 14px !important;
+    }
+
+    .footer-bottom-icon-links img {
+        width: 42px !important;
+        height: 42px !important;
     }
 }
