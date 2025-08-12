@@ -84,6 +84,7 @@
     gap: 1vw;
 }
 
+/*
 .gestao-card img {
     background-color: azure;
     border-radius: 80px;
@@ -91,11 +92,12 @@
     height: 6vw;
     background-image: url("../images/insta1.png");
 }
-
+*/
 .name-and-function {
     display: flex;
     flex-direction: column;
     gap: 1vw;
+    width: 90%;
 }
 
 .name-and-function h3 {
