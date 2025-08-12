@@ -81,7 +81,8 @@
 
 .stories-card-img {
     object-fit: fill;
-    max-width: 40%;
+    width: 40%;
+    max-width: 50%;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
