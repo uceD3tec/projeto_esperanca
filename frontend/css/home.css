@@ -415,27 +415,44 @@ video {
     /* border: #0AA550 solid 2px; */
 }
 
-
-.partners-card-slider-left,
-.partners-card-slider-right {
-    cursor: pointer;
+#partners-carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 20px; /* Espaçamento entre itens */
+    width: 100%;
 }
 
-.partners-card-slider-right:hover svg circle {
-    fill: #F47701;
+.partners-card {
+    flex: 0 0 calc(100% / 6 - 20px); /* 6 itens visíveis */
+    min-width: 150px; /* Largura mínima (ajustável) */
 }
 
-.partners-card-slider-left:hover svg circle {
-    fill: #F47701;
+.partners-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.partners-card-slider-right:hover svg path {
-    stroke: white;
+
+.carousel-section,.partners-h3 {
+    color: var(--Neutral-Colors-White, #F47701);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Headings/H1 */
+    font-family: "DM Sans";
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 66px; */
+    /* 117.857% */
 }
 
-.partners-card-slider-left:hover svg path {
-    stroke: white;
+.partners-h3{
+    margin: 0;
+    margin-top: 60px;
 }
+
 
 /*
     VERSÃO DE CELULAR
