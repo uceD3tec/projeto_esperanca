@@ -8,6 +8,8 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 /* .icone_menu{
@@ -19,9 +21,9 @@
 
 .action-banner {
     display: flex;
-    height: 100vw;
-    width: 95vw;
-    padding-top: 10%;
+    height: 40vw;
+    width: 100vw;
+    margin-top: 7%;
     align-items: center;
     justify-content: center;
     /* border: orangered 2px solid; */
@@ -30,7 +32,7 @@
 .action-banner-central-div {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 80%;
     flex-shrink: 0;
     border-radius: 30px;
     background: url("../images/imagem_inicio.png");
@@ -328,7 +330,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: #0AA550 solid 2px; */
+    border: #0AA550 solid 2px;
 }
 
 .instagram-news-card-group {
@@ -364,26 +366,20 @@ video {
     color: #161618;
     font-feature-settings: 'liga' off, 'clig' off;
 
-    /* Headings/H1 */
     font-family: "DM Sans";
     font-size: 4.5vw;
     font-style: normal;
     font-weight: 700;
-    /* line-height: 66px; */
-    /* 117.857% */
 }
 
 .instagram-news-slider p {
     color: #161618;
     font-feature-settings: 'liga' off, 'clig' off;
 
-    /* Body/Default */
     font-family: "DM Sans";
     font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
-    /* line-height: 30px; */
-    /* 166.667% */
 }
 
 
@@ -410,59 +406,54 @@ video {
     stroke: white;
 }
 
-.partners {
-    padding-top: 6vw;
-    padding-bottom: 6vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* border: #0AA550 solid 2px; */
-}
-
-.partners-card {
-    width: 15vw;
-    height: 15vw;
-    /* border: #0AA550 solid 2px; */
-}
-
-#partners-carousel {
-    display: flex;
-    overflow: hidden;
-    gap: 20px; /* Espaçamento entre itens */
-    width: 100%;
-}
-
-.partners-card {
-    flex: 0 0 calc(100% / 6 - 20px); /* 6 itens visíveis */
-    min-width: 150px; /* Largura mínima (ajustável) */
-}
-
-.partners-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-
-.carousel-section,.partners-h3 {
+.partners-h3{
     color: var(--Neutral-Colors-White, #F47701);
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
 
-    /* Headings/H1 */
+    /* Headings/H2 */
     font-family: "DM Sans";
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
-    /* line-height: 66px; */
-    /* 117.857% */
+    /* line-height: 46px; */
+    /* 127.778% */
 }
 
-.partners-h3{
-    margin: 0;
-    margin-top: 60px;
+.partners {
+    display: flex;
+    height: 30vw;
+    width: 100vw;
+    /* padding-top: 6vw; */
+    /* padding-bottom: 6vw; */
+    justify-content: center;
+    align-items: center;
+    /* border: #0AA550 solid 2px; */
+    margin-top: 5%;
+    margin-bottom: 7%;
 }
 
+.carousel {
+    /* height: 20vw; */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+    /* gap: 100vw; */
+}
+
+.carousel img {
+    width: 20vw; /* Define um tamanho menor para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    flex-shrink: 0;
+    object-fit: contain; /* Garante que a imagem seja ajustada dentro do espaço */
+    margin: 38.9vw; /* Adiciona espaçamento entre as imagens */
+    /* gap: 100vw; */
+}
 
 /*
     VERSÃO DE CELULAR
@@ -474,6 +465,7 @@ video {
         padding: 0 !important;
         overflow-x: hidden;
         width: 100vw !important;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -494,10 +486,13 @@ video {
     }
 
     .action-banner-central-div {
+        display: flex;
+        margin-top: 120vw;
+        margin-bottom: 180vw;
+        height: 100vw;
         width: 90vw;
-        height: auto;
-        min-height: 10vw; 
-        padding: 2.5vw;
+        /* min-height: 10vw;  */
+        /* padding: 2.5vw; */
         border-radius: 15px;
         
     }
@@ -654,19 +649,16 @@ video {
     }
 
     .partners {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        flex-direction: column; /* Alinha os itens verticalmente */
     }
 
-    .partners-card {
-        width: 100px;
-        height: 100px;
+    .carousel img {
+        width: 40vw; /* Aumenta o tamanho das imagens para telas menores */
+        margin: 27.5vw; /* Reduz o espaçamento entre as imagens */
     }
 
-    .partners-card-slider-left, .partners-card-slider-right {
-        display: none; 
+    .partners-h3 {
+        font-size: 7vw; /* Aumenta o tamanho do texto para melhor visibilidade */
     }
 }

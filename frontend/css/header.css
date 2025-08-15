@@ -2,7 +2,7 @@
     display: flex;
     height: 7vw;
     width: 100vw;
-    padding: 0 0 0 2vw;
+    /* padding: 0 0 0 2vw; */
     justify-content: space-evenly;
     align-items: center; 
     background: #FFF;
@@ -12,24 +12,33 @@
 
 .header-logo{
     display: flex;
+    height: 100%;
+    width: 40%;
     align-items: center;
+    /* border: #0AA550 2px solid; */
     gap: 16px;
 }
 
-.header-logo h3{
+.header-logo img{
+    display: flex;
+    height: 85%;
+    /* border: #0AA550 2px solid; */
+}
+
+.header-logo-text h3{
     color: #0AA550;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
 }
 
-.header-logo p{
+.header-logo-text p{
     margin-top: -20px;
     color: #161618;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -37,11 +46,14 @@
 
 .header-button-group{
     display: flex;
+    height: 100%;
+    width: 45%;
     justify-content: center;
     align-items: center;
     gap: 32px;
     background-color: #FFF;
     z-index: 200;
+    /* border: #0AA550 2px solid; */
 }
 
 .header-button-group a{
@@ -55,7 +67,7 @@
     color: #161618;
     text-align: center;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
