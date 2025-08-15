@@ -1,31 +1,41 @@
+* {
+    /* box-sizing: border-box; */
+}
+
 .body {
     display: flex;
     width: 100vw;
-    overflow-x: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-.icone_menu{
+/* .icone_menu{
     display: none;
     margin-left: 30px;
     text-decoration: none;
-}
+    border: 1px solid red;
+} */
 
 .action-banner {
-    padding-top: 50px;
     display: flex;
+    height: 100vw;
+    width: 95vw;
+    padding-top: 10%;
     align-items: center;
     justify-content: center;
+    /* border: orangered 2px solid; */
 }
 
 .action-banner-central-div {
-    width: 80vw;
-    height: 49vw;
+    display: flex;
+    height: 100%;
+    width: 100%;
     flex-shrink: 0;
     border-radius: 30px;
     background: url("../images/imagem_inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -124,7 +134,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 10%;
 }
 
 .about-us-central-div {
@@ -460,9 +470,10 @@ video {
 
 @media screen and (max-width: 768px) {
     body {
-        margin: 0px;
+        margin: 0 !important;
+        padding: 0 !important;
         overflow-x: hidden;
-        width: 100%;
+        width: 100vw !important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -470,14 +481,23 @@ video {
     }
 
     section {
-        padding: 20px 0; 
+        /* padding: 20px 0; */
+    }
+
+    .icone_menu{
+        display: none;
+        /* margin-left: 30px; */
+        text-decoration: none;
+        /* padding-bottom: 2vw; */
+
+        /* border: 1px solid red; */
     }
 
     .action-banner-central-div {
         width: 90vw;
         height: auto;
-        min-height: 300px; 
-        padding: 20px;
+        min-height: 10vw; 
+        padding: 2.5vw;
         border-radius: 15px;
         
     }
@@ -511,20 +531,22 @@ video {
         width: 90vw;
         height: auto;
         border-radius: 15px;
-        
+        /* border: green 2px solid; */
     }
 
     .about-us-left-side, .about-us-right-side {
         width: 100%;
         height: 300px; 
         border-radius: 15px;
+        /* border: blue 2px solid; */
     }
 
     .about-us-left-side {
         order: 2; 
-        padding: 40px;
+        /* padding: 0 0 29vw 0; */
         width: 90%;
-        margin-left: -20px;
+        /* margin-left: -20px; */
+        /* border: 2px solid red; */
     }
 
     .about-us-right-side {
@@ -542,14 +564,15 @@ video {
     }
 
     .about-us-left-side-text h3 {
-        font-size: 28px;
+        font-size: 9vw;
         line-height: 36px;
     }
 
     .about-us-left-side-text p {
-        font-size: 16px;
+        font-size: 4.6vw;
         line-height: 24px;
-        margin-top: 10px;
+        margin-bottom: 30vw;
+        /* border: red 2px solid; */
     }
 
     .institucional-video h3 {
@@ -583,12 +606,16 @@ video {
         flex-direction: column;
         width: 90%;
         gap: 20px;
+        /* border: 2px solid red; */
     }
 
     .yearly-results-card {
-        width: 90%;
-        padding: 20px;
+        display: flex;
+        height: auto;
+        width: 100%;
+        /* padding: 20px; */
         gap: 40px;
+        /* border: 2px solid red; */
     }
 
     .yearly-results-card h3 {

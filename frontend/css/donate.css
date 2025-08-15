@@ -26,8 +26,8 @@
 
         .donate-card img {
             margin: 2.5vw 0 1.5vw 0;
-            width: 11vw;
-            height: 11vw;
+            width: 10vw;
+            height: 10vw;
             border-radius: 100%;
             border: 2px solid #161618;
             background: url(<path-to-image>) lightgray 50% / cover no-repeat, #F9F9FF;
@@ -303,7 +303,7 @@
 
             .donate-card-left img {
                 display: flex;
-                height: 100% !important;
+                height: 95% !important;
                 width: auto !important;
                 margin: 0 5% 0 0 !important;
                 border-radius: 100%;
@@ -323,7 +323,7 @@
 
             .donate-card-right h3 {
                 display: flex;
-                height: 15% !important;
+                height: 25% !important;
                 width: 100% !important;
                 margin: 0 !important;
                 color: #F47701;
@@ -333,7 +333,7 @@
 
                 /* Special headings/Display 3 */
                 font-family: "DM Sans";
-                font-size: 4vw;
+                font-size: 6vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 3vw;
@@ -342,7 +342,7 @@
             .donate-card-right p {
                 display: flex;
                 height: 45% !important;
-                width: 80% !important;
+                width: 100% !important;
                 margin: 0 !important;
                 padding: 0 !important;
                 color: rgba(22, 22, 24, 0.50);
@@ -352,9 +352,9 @@
 
                 /* Body/Default */
                 font-family: "DM Sans";
-                font-size: 2.2vw;
+                font-size: 3.2vw;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: normal !important;
                 /* 166.667% */
             }
@@ -363,7 +363,7 @@
                 display: flex;
                 height: 20% !important;
                 width: 100% !important;
-                margin-top: 0 !important;
+                margin-top: 5% !important;
                 padding: 0 !important;
                 justify-content: center;
                 align-items: center;
@@ -403,17 +403,17 @@
     
         .why-donate-left-side-text {
             height: 100% !important;
-            width: 80% !important;
+            width: 90% !important;
         }
     
         .why-donate-left-side-text h3 {
-            font-size: 4vw !important;
+            font-size: 5vw !important;
         }
     
         .why-donate-left-side-text p {
-            font-size: 2.2vw;
-            font-weight: 200;
-            line-height: 2.5vw;
+            font-size: 3.0vw;
+            font-weight: 150;
+            line-height: 2.8vw;
         }
     
         .why-donate-right-side {
@@ -456,10 +456,11 @@
             .donate-info-text img {
                 height: 30%;
                 width: 30%;
+                margin-bottom: 25%;
             }
             
             .donate-info-text h3 {
-                height: 30%;
+                height: 50%;
                 width: 50%;
                 margin: 0 0 0 7%;                
                 color: #F9F9FF;
@@ -469,9 +470,9 @@
                 width: 85%;
                 margin: -35% 0 0 0;
                 color: #F9F9FF;
-                font-size: 2.2vw;
-                font-weight: 200;
-                line-height: 2.5vw;
+                font-size: 3vw;
+                font-weight: 150;
+                line-height: 2.8vw;
                 font-style: normal;
             }
 
