@@ -6,7 +6,7 @@
     display: flex;
     width: 100vw;
     padding: 0;
-    margin: 0;
+    margin: 0; 
     overflow-x: hidden;
     /* justify-content: center; */
     /* align-items: center; */
@@ -437,7 +437,7 @@ video {
     /* height: 20vw; */
     width: 100%;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 .carousel-track {
@@ -448,10 +448,10 @@ video {
 
 .carousel img {
     width: 20vw; /* Define um tamanho menor para as imagens */
-    height: auto; /* Mantém a proporção da imagem */
+    /* height: auto; Mantém a proporção da imagem */
     flex-shrink: 0;
     object-fit: contain; /* Garante que a imagem seja ajustada dentro do espaço */
-    margin: 38.9vw; /* Adiciona espaçamento entre as imagens */
+    margin: 0 38.9vw; /* Adiciona espaçamento entre as imagens */
     /* gap: 100vw; */
 }
 
@@ -484,13 +484,19 @@ video {
 
         /* border: 1px solid red; */
     }
-
+    .action-banner {
+        display: flex;
+        height: 100vw;
+        width: 100vw;
+        margin-top: 10%;
+        padding: 0;
+    }
     .action-banner-central-div {
         display: flex;
-        margin-top: 120vw;
-        margin-bottom: 180vw;
-        height: 100vw;
-        width: 90vw;
+        /* margin-top: 120vw; */
+        /* margin-bottom: 180vw; */
+        height: 100%;
+        width: 90%;
         /* min-height: 10vw;  */
         /* padding: 2.5vw; */
         border-radius: 15px;
@@ -498,27 +504,31 @@ video {
     }
 
     .action-banner-central-div h3 {
-        font-size: 32px;
-        line-height: 40px;
+        display: flex;
+        width: 95%;
+        font-size: 10vw;
+        /* line-height: 40px; */
         margin-bottom: 10px;
     }
 
     .action-banner-central-div p {
-        font-size: 16px;
-        line-height: 24px;
+        display: flex;
+        width: 90%;
+        font-size: 4vw;
+        line-height: 120%;
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10%;
     }
 
     .action-banner-button-group {
         flex-direction: column;
-        gap: 15px;
+        gap: 3vw;
         width: 100% !important;  
     }
 
     .action-banner-button, .action-banner-button2 {
         width: 100%;
-        font-size: 16px;
+        font-size: 4vw;
     }
 
     .about-us-central-div {
@@ -649,13 +659,14 @@ video {
     }
 
     .partners {
-        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        height: 60vw; /* Ajusta a altura para se adaptar ao conteúdo */
         flex-direction: column; /* Alinha os itens verticalmente */
+        /* border: orangered 2px solid; */
     }
 
     .carousel img {
         width: 40vw; /* Aumenta o tamanho das imagens para telas menores */
-        margin: 27.5vw; /* Reduz o espaçamento entre as imagens */
+        margin: 0 27.5vw; /* Reduz o espaçamento entre as imagens */
     }
 
     .partners-h3 {

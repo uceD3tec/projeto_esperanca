@@ -129,6 +129,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
 }
 
 
@@ -214,6 +215,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
 }
 
 .left-project-left-div img {
@@ -246,6 +248,7 @@
     .left-project-right-div p{
         font-size: 12px;
         line-height: 15px;
+        /* border:   5px solid red; */
     }
     .left-project-right-div h3{
         font-size: 12px;
@@ -256,6 +259,7 @@
         height: fit-content;
         width: fit-content;
         padding: 4px;
+        text-align: center;
     }
     .left-project-left-div img{
         height: 256px;
@@ -281,6 +285,7 @@
     }
     .right-project-specification{
         font-size: 11px;
+        text-align: center;
         height: fit-content;
         width: fit-content;
         padding: 4px;
