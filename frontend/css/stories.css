@@ -123,10 +123,10 @@
     .storie-resume { /*p*/
         /* Body/Default */
         font-family: "DM Sans";
-        font-size: 12px;
+        font-size: 5vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 15px;
+        line-height: 5vw;
         /* 166.667% */
 
     }
