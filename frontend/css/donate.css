@@ -354,7 +354,7 @@
                 font-family: "DM Sans";
                 font-size: 3.2vw;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 500;
                 line-height: normal !important;
                 /* 166.667% */
             }
@@ -412,7 +412,7 @@
     
         .why-donate-left-side-text p {
             font-size: 3.0vw;
-            font-weight: 150;
+            font-weight: 300;
             line-height: 2.8vw;
         }
     
@@ -471,7 +471,7 @@
                 margin: -35% 0 0 0;
                 color: #F9F9FF;
                 font-size: 3vw;
-                font-weight: 150;
+                font-weight: 300;
                 line-height: 2.8vw;
                 font-style: normal;
             }

@@ -664,6 +664,16 @@ video {
         /* border: orangered 2px solid; */
     }
 
+    .carousel-section h3{
+        color: var(--Neutral-Colors-White, #F47701);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 700;;
+}
+
     .carousel img {
         width: 40vw; /* Aumenta o tamanho das imagens para telas menores */
         margin: 0 27.5vw; /* Reduz o espaçamento entre as imagens */
