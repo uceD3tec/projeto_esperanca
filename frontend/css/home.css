@@ -440,6 +440,16 @@ video {
     /* position: relative; */
 }
 
+.carousel-section h3{
+    color: var(--Neutral-Colors-White, #F47701);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 700;
+}
+
 .carousel-track {
     display: flex;
     transition: transform 1.5s ease-in-out;
@@ -671,7 +681,7 @@ video {
         font-family: "DM Sans";
         font-size: 6vw;
         font-style: normal;
-        font-weight: 700;;
+        font-weight: 700;
 }
 
     .carousel img {
