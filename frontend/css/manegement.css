@@ -80,7 +80,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 1.8vw;
     padding-bottom: 2vh !important;
 
 }
@@ -95,7 +94,6 @@
     height: 60%;
     background-size: cover;
     margin-top: 10%;
-    margin-right: 5% !important;
     margin-bottom: 10% ;
     /* aspect-ratio: 3/4; */
 }
@@ -215,23 +213,22 @@
     .gestao-card {
         width: 28vw;
         height: 35vw !important;
-        border-radius: 18px;
+        border-radius: 10px;
         background: #F47701;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        padding-left: 1.8vw !important;
-        padding-top: 2vw !important;
         padding: 0;
         gap: 1vw;
+        padding-top: 0.5vw !important;
         padding-bottom: 6% !important;
     }
 
     .gestao-card img {
         margin: 2vw 0 2vw;
-        background-color: azure;
-        border-radius: 20px;
+        border-radius: 10px;
+        border: #FFF 2px solid !important;
         width: 22vw;
         height: 22vw;
     }
@@ -241,7 +238,7 @@
     color: #FFF;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Poppins;
-    font-size: 2.2vw;
+    font-size: 2.6vw;
     font-style: normal;
     font-weight: 550;
     line-height: 3vw;
@@ -259,6 +256,7 @@
         /* 112.5% */
         letter-spacing: 1.6px;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .estatuto-btn button {
