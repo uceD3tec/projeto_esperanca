@@ -62,7 +62,7 @@ npm install
 Crie um arquivo `.env` dentro da pasta **backend** com o seguinte conteúdo:
 
 ```
-MONGODB_URI=mongodb://localhost:27017/projeto_esperanca
+MONGO_URI=mongodb://localhost:27017/projeto_esperanca
 JWT_SECRET=seu-segredo
 ```
 
