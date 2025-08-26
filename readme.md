@@ -221,6 +221,54 @@ Authorization: Bearer <seu-token>
 
 ---
 
+### 6.7 – Pesquisar por nome ou descricao de um conteudo
+
+**GET** `http://localhost:3000/api/content/search?query=`
+**Resposta (exemplo):**
+
+```json
+[
+  {
+    "_id": "68adee6e7f97a290ca7cc6df",
+    "contentName": "titulo projetos",
+    "section": "PROJETOS",
+    "description": "descricao projetos",
+    "image": null,
+    "createdAt": "2025-08-26T17:27:10.896Z",
+    "updatedAt": "2025-08-26T17:27:10.896Z",
+    "__v": 0
+  }
+]
+```
+
+> Retorna todas as publicações do Projeto Esperança filtrada pela pesquisa.
+
+---
+
+
+### 6.8 – Pesquisar por nome ou descricao de um conteudo em uma sessão
+
+**GET** `http://localhost:3000/api/content/:section/search?query=`
+**Resposta (exemplo):**
+
+```json
+[
+  {
+    "_id": "68adee6e7f97a290ca7cc6df",
+    "contentName": "titulo projetos",
+    "section": "sessão selecionada",
+    "description": "descricao projetos",
+    "image": null,
+    "createdAt": "2025-08-26T17:27:10.896Z",
+    "updatedAt": "2025-08-26T17:27:10.896Z",
+    "__v": 0
+  }
+]
+```
+
+> Retorna todas as publicações do Projeto Esperança filtrada pela pesquisa e em um sessão.
+
+---
 ## 7. Testando as Requisições (Postman ou cURL)
 
 ### Exemplo – Login
@@ -243,4 +291,3 @@ curl -X POST http://localhost:3000/api/content \
 ```
 
 ---
-
