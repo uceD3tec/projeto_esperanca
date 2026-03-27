@@ -11,7 +11,7 @@ frontend/build/
 admin-panel/build/
 
 # Diretórios de uploads no backend
-backend/uploads/
+backend/public/uploads/
 
 # Arquivos de configuração do ambiente
 **/.env
