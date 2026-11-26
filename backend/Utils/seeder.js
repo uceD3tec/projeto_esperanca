@@ -23,7 +23,15 @@ const seedDatabase = async () => {
         await HomeContent.create({
             whoWeAre: { text: "Texto inicial...", image: "https://placehold.co/600x400" },
             learnMoreVideo: "https://www.youtube.com/watch?v=VIDEO_ID",
-            results: { year: 2024, stats: [{ title: "Crianças", count: 150 }] },
+            results: {
+                year: 2025,
+                stats: [
+                    { title: "Cestas Básicas", count: 3405 },
+                    { title: "Almoços Solidários", count: 20300 },
+                    { title: "Roupas Doadas", count: 5686 },
+                    { title: "Itens no Bazar", count: 8000 }
+                ]
+            },
             partners: []
         });
         console.log('Conteúdo Home inicializado.');

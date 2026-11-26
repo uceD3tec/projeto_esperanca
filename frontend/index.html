@@ -145,11 +145,26 @@
             <div class="container mx-auto px-4 relative z-10">
                 <!-- ID 'stats-year' para texto dinâmico, mantendo estilo do H3 -->
                 <h3 class="text-center text-3xl md:text-4xl font-display font-bold mb-16">
-                    Resultados que Inspiram - <span id="stats-year">...</span>
+                    Resultados que Inspiram - <span id="stats-year">2025</span>
                 </h3>
-                <!-- ID 'stats-grid' adicionado e conteúdo estático removido para inserção dinâmica -->
+                <!-- ID 'stats-grid' com conteúdo inicial de fallback -->
                 <div id="stats-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Cards serão inseridos via JS mantendo o estilo da V2 -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center border border-white/20 hover:-translate-y-2 transition-transform">
+                        <div class="text-5xl font-bold mb-2">+3.405</div>
+                        <p class="text-lg font-medium opacity-90">Cestas Básicas</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center border border-white/20 hover:-translate-y-2 transition-transform">
+                        <div class="text-5xl font-bold mb-2">+20.300</div>
+                        <p class="text-lg font-medium opacity-90">Almoços Solidários</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center border border-white/20 hover:-translate-y-2 transition-transform">
+                        <div class="text-5xl font-bold mb-2">+5.686</div>
+                        <p class="text-lg font-medium opacity-90">Roupas Doadas</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center border border-white/20 hover:-translate-y-2 transition-transform">
+                        <div class="text-5xl font-bold mb-2">+8.000</div>
+                        <p class="text-lg font-medium opacity-90">Itens no Bazar</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -315,6 +330,7 @@
                 document.getElementById('stats-year').innerText = data.results.year;
                 
                 const statsGrid = document.getElementById('stats-grid');
+                statsGrid.innerHTML = '';
                 // Gera o HTML usando as classes de estilo da V2
                 data.results.stats.forEach(stat => {
                     statsGrid.innerHTML += `

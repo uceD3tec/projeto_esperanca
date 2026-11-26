@@ -113,10 +113,25 @@
             <div class="container mx-auto px-4 relative z-10">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-display font-bold mb-4">Resultados que Inspiram</h2>
-                    <p id="stats-year" class="text-orange-100 text-lg">Ano referência: ...</p>
+                    <p id="stats-year" class="text-orange-100 text-lg">Ano referência: 2025</p>
                 </div>
                 <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <!-- Stats inseridos via JS -->
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">+3.405</div>
+                        <div class="text-orange-100 font-medium uppercase text-sm tracking-wide">Cestas Básicas</div>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">+20.300</div>
+                        <div class="text-orange-100 font-medium uppercase text-sm tracking-wide">Almoços Solidários</div>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">+5.686</div>
+                        <div class="text-orange-100 font-medium uppercase text-sm tracking-wide">Roupas Doadas</div>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">+8.000</div>
+                        <div class="text-orange-100 font-medium uppercase text-sm tracking-wide">Itens no Bazar</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,6 +181,7 @@
             if(data.results) {
                 document.getElementById('stats-year').innerText = `Ano referência: ${data.results.year}`;
                 const statsGrid = document.getElementById('stats-grid');
+                statsGrid.innerHTML = '';
                 data.results.stats.forEach(stat => {
                     statsGrid.innerHTML += `
                         <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
