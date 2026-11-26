@@ -1,0 +1,62 @@
+require('dotenv').config();
+const User = require('../models/User');
+const Management = require('../models/Management');
+const HomeContent = require('../models/HomeContent');
+const bcrypt = require('bcryptjs');
+
+
+const seedDatabase = async () => {
+    // 1. Criar Admin Padrão se não existir
+    const adminExists = await User.findOne({ email: process.env.ADMIN_EMAIL });
+    if (!adminExists) {
+        const senha = process.env.ADMIN_PASSWORD;
+        const email = process.env.ADMIN_EMAIL;
+        const salt = await bcrypt.genSalt(10);
+        const password = await bcrypt.hash(senha, salt);
+        await User.create({ email: email, password });
+        console.log(`Admin padrão criado: ${email} / ${senha}`);
+    }
+
+    // 2. Inicializar Home Content se não existir
+    const homeExists = await HomeContent.findOne();
+    if (!homeExists) {
+        await HomeContent.create({
+            whoWeAre: { text: "Texto inicial...", image: "https://placehold.co/600x400" },
+            learnMoreVideo: "https://www.youtube.com/watch?v=VIDEO_ID",
+            results: {
+                year: 2025,
+                stats: [
+                    { title: "Cestas Básicas", count: 3405 },
+                    { title: "Almoços Solidários", count: 20300 },
+                    { title: "Roupas Doadas", count: 5686 },
+                    { title: "Itens no Bazar", count: 8000 }
+                ]
+            },
+            partners: []
+        });
+        console.log('Conteúdo Home inicializado.');
+    }
+
+    // 3. Inicializar Gestão (Cards Fixos)
+    const count = await Management.countDocuments();
+    if (count === 0) {
+        const roles = [
+            { role: 'Bispo da Diocese', category: 'eclesiastica', name: 'Nome' },
+            { role: 'Administrador Paroquial', category: 'eclesiastica', name: 'Nome' },
+            { role: 'Presidente(a)', category: 'coordenacao', name: 'Pe. Nome' },
+            { role: 'Vice-Presidente(a)', category: 'coordenacao', name: 'Nome' },
+            { role: 'Tesoureiro', category: 'coordenacao', name: 'Nome' },
+            { role: '1º Secretário(a)', category: 'coordenacao', name: 'Nome' },
+            { role: '2º Secretário(a)', category: 'coordenacao', name: 'Nome' },
+            { role: 'Coordenador(a) Geral', category: 'coordenacao', name: 'Nome' },
+            { role: '1º Fiscal Titular', category: 'conselho', name: 'Nome' },
+            { role: '2º Fiscal Titular', category: 'conselho', name: 'Nome' },
+            { role: '1º Fiscal Suplente', category: 'conselho', name: 'Nome' },
+            { role: '2º Fiscal Suplente', category: 'conselho', name: 'Nome' }
+        ];
+        await Management.insertMany(roles);
+        console.log('Cargos de gestão inicializados.');
+    }
+};
+
+module.exports = seedDatabase;

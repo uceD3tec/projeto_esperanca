@@ -1,10 +1,56 @@
-import { config } from "dotenv";
-import { app } from "./app.js";
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const path = require('path'); // Importar módulo path
+const connectDB = require('./config/db');
+const seedDatabase = require('./Utils/seeder');
+const instagramRouter = require('./routes/instagramRoutes').instagramRouter;
+const backupRoutes = require('./routes/backupRoutes');
 
-config();
+const app = express();
 
-const port = process.env.SERVER_PORT || 3000;
+// --- MIDDLEWARES (ADAPTADO) ---
+app.use(cors());
 
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
+// Aumenta o limite do body-parser para aceitar imagens em Base64 (até 50mb)
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+
+// --- ROTAS DA API ---
+app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/content', require('./routes/contentRoutes'));
+app.use('/api/instagram', instagramRouter);
+app.use('/api/backup', backupRoutes);
+
+// --- SERVIR ARQUIVOS ESTÁTICOS (FRONTEND E ADMIN) ---
+
+// 1. Servir a pasta 'admin' na rota /admin
+app.use('/admin', express.static(path.join(__dirname, '../admin')));
+
+// 2. Servir a pasta 'frontend' na raiz (/)
+app.use(express.static(path.join(__dirname, '../frontend')));
+
+// 3. Rota Coringa (Fallback)
+// Se o usuário acessar a raiz, envia o index.html do frontend
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
+
+// Se o usuário acessar /admin mas não especificar arquivo, tenta abrir login ou index
+app.get('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, '../admin/login.html'));
+});
+
+const PORT = process.env.PORT || 3000;
+
+connectDB(); 
+
+// Apenas inicie o servidor se NÃO estiver no Vercel (ambiente de desenvolvimento local)
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`🚀 Servidor rodando na porta ${PORT}`);
+    });
+}
+
+// O Vercel exige que você exporte o 'app'
+module.exports = app;
